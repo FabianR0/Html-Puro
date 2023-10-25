@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclutamiento</title>
+    <style>
+        fieldset{
+            border-color: black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        input{
+            border-color: rgb(95, 95, 95);
+            border-radius: 5px;
+        }
+        textarea{
+            border-color:rgb(0, 0, 0) ;
+            border-style: dashed;
+        }
+        @media (max-width: 948px) {
+            .responsive{
+                display: flex; 
+                justify-content: space-evenly; 
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);">
+    <header>
+        <h1 style="text-align: center; font-size: 50px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Convocatoria -- 2024</h1>
+    </header>
+    <p style="text-align: center; font-size: 20px; ">Esta pagina esta relacionada para convocar y reclutar personal con o sin experencia, con o sin discapacidad y ganas de trabajar...</p>
+    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+        <div class="responsive">
+            <img style="background-color: rgb(202, 202, 202); width:200px; height:250px; margin-left: 27px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);"><br><br>
+            <fieldset>
+                <legend style="font-size: 20px;">Datos Personales </legend>
+                <input type="text" placeholder="Nombre Completo" style="width: 200px; height: 30px; font-size: 15px; margin-bottom: 5px;"><br>
+                <input type="text" placeholder="Direccion Completa" style="width: 200px; height: 30px; font-size: 15px; margin-bottom: 5px;"><br>
+                <input type="text" placeholder="Municipio-Departamento-Pais" style="width: 200px; height: 30px; font-size: 15px; margin-bottom: 5px;"><br>
+                <input type="number" placeholder="Telefono" style="width: 200px; height: 30px; font-size: 15px;margin-bottom: 5px;"><br>
+                <input type="email" placeholder="Email" style="width: 200px; height: 30px; font-size: 15px;">
+            </fieldset>
+            <br>
+            <form action="registrardatos.php">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li><input type="text" name="1" tabindex="1" style="margin-bottom: 5px;" placeholder="Compañerista"></li>
+                    <li><input type="text" name="1" tabindex="2" style="margin-bottom: 5px;" placeholder="Liderazgo"></li>
+                    <li><input type="text" name="1" tabindex="3" style="margin-bottom: 5px;" placeholder="Buen Autoestima"></li>
+                    <li><input type="text" name="1" tabindex="4" placeholder="Amable"></li>
+                </ul>
+            </form>
+            <form action="registrardatos.php" method="post">
+                <h3>¿Tiene alguna Discapacidad?</h3> 
+                <ul>
+                    <li>
+                        <label>Sordo</label>
+                        <input type="radio" name="1"><br>
+                    </li>
+                    <li>
+                        <label>Ciego</label>
+                        <input type="radio" name="1"><br>
+                    </li>
+                    <li>
+                        <label>Mudo</label>
+                        <input type="radio" name="1"><br>
+                    </li>
+                    <li>
+                        <label>Otro</label>
+                        <!-- inhabilitar controlles -->
+                        <input type="radio" name="1" disabled>
+                    </li>
+                </ul> 
+            </form>
+            <br>
+            <fieldset>
+                <legend style="font-size: 20px;">Referencia Comercial</legend>
+                <input type="text" placeholder="Nombre Completo" style="width: 200px; height: 30px; font-size: 15px; margin-bottom: 5px;"><br>
+                <input type="number" placeholder="Telefono" style="width: 200px; height: 30px; font-size: 15px;"><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend style="font-size: 20px;">Referencia Personal</legend>
+                <input type="text" placeholder="Nombre Completo" style="width: 200px; height: 30px; font-size: 15px; margin-bottom: 5px;"><br>
+                <input type="number" placeholder="Telefono" style="width: 200px; height: 30px; font-size: 15px;"><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend style="font-size: 20px;">Referencia Familiar</legend>
+                <input type="text" placeholder="Nombre Completo" style="width: 200px; height: 30px; font-size: 15px ; margin-bottom: 5px;"><br>
+                <input type="number" placeholder="Telefono" style="width: 200px; height: 30px; font-size: 15px;"><br>
+            </fieldset>
+        </div>
+        <div>
+          <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+            <div>
+                <fieldset style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+                    <legend style="font-size: 20px;">SocioEconomico:</legend> 
+                    <div>
+                        Eres mayor de Edad?<br>
+                        <input type="radio" name ="radio1" checked value="si">SI<br>
+                        <input type="radio" name ="radio1" value="no">NO
+                    </div>
+                    <div>
+                        <input type="number" name="age" id="id" placeholder="Que edad tienes?"><br>
+                    </div>
+                    <div>
+                        <label>Genero:</label>
+                        <form action="registrardatos.php">
+                            <select name="" id="wey">
+                                <option value="0"></option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Femenino</option>
+                                <option value="3">Otro..</option>
+                            </select>
+                        </form>
+                    </div>
+                </fieldset>
+                <br>
+                <br>
+                <fieldset>
+                    <legend style="font-size: 20px;">Iniciar Seccion:</legend>
+                    <label>Nombre: (^-^)</label>
+                    <!-- maxlength() and password -->
+                    <input type="text" name="name" id="1" maxlength="20" placeholder="Minimo 20 caracter">
+                    <label>Email:</label>
+                    <input type="email" name="mail" id="2" maxlength="20" placeholder="Minimo 20 caracter">
+                    <label>Clave</label>
+                    <input type="password" name="password" maxlength="12"  placeholder="Minimo 12 caracter"><br>
+                    <button style="margin-left: 500px; margin-top: 5px;">Submit</button>
+                </fieldset>
+                <br>
+                <br>
+                <fieldset>
+                    <legend style="font-size: 20px;">Perfil Laboral</legend>
+                    <textarea name="coment" id="" cols="80" rows="2" placeholder="Amable, simpático, honesto, con buenas habilidades de escucha y comunicación, también con una mente creativa ...... etc."></textarea><br>
+                </fieldset>
+                <br>
+                <br>
+                <fieldset>
+                    <legend style="font-size: 20px;">Formacion Academica</legend>
+                    <input type="text" placeholder="Example:Colegio Gaviota" style="margin: 5px;"><br>
+                    <textarea name="coment" id="" cols="80" rows="1" placeholder="Example:Bachiller,Tecnico,Tecnologo"></textarea><br>
+                </fieldset>
+                <br>
+                <br>
+                <fieldset>
+                    <legend style="font-size: 20px;">Experiencia Laboral</legend>
+                    <input type="text" placeholder="Example:Area Comercial" style="margin: 5px;"><br>
+                    <textarea name="coment" id="" cols="80" rows="1" placeholder="Example:Remate Donde sea,Hotel No hay cupo"></textarea><br>
+                </fieldset>
+                <br>
+                <br>
+                <fieldset style="justify-content: space-evenly; flex-wrap: wrap; display: flex;">
+                    <legend style="font-size: 20px;">Contrato:</legend>
+                    <label>Definido</label>
+                    <input type="radio" name="3">
+                    <label>Indefinido</label>
+                    <input type="radio" name="3">
+                    <label>Completo</label>
+                    <input type="radio" name="3">
+                    <label>Por Horas..</label>
+                    <input type="radio" name="3">
+                </fieldset>
+                
+                <br>
+                <br>       
+                <fieldset>
+                    <legend style="font-size: 20px;">Comentario:   °(^o^)° </legend>
+                    <form action="registrardatos.php" method="post"> 
+                        <!-- readOnly and textarea -->
+                        <textarea name="coment" id="id2" cols="80" rows="1" placeholder="Por la presente, cordialmente escribo algo .... (-_-)"></textarea><br>
+                        <input type="button" value="Submit" style="margin-left: 500px;">
+                    </form>
+                    <!-- action="example@gmail.com" -->
+                    <form action="example@gmail.com"><strong>Duda al correo Institucional: </strong><button type="submit" style="align-items: center;display: inline-flex;">Enviar <img src="img/mail.gif" alt="Enviar" width="35px" height="35px"></button></form>
+                </fieldset>
+                <br>
+                <br>
+                <fieldset style="justify-content: space-evenly; flex-wrap: wrap; display: flex; font-size: 20px;">
+                    <legend>Certificacion</legend>
+                    <button type="submit"><img src="img/mail.gif" alt="Enviar" width="100px" height="100px"></button>
+                    <button type="submit"><img src="img/mail.gif" alt="Enviar" width="100px" height="100px"></button>
+                    <button type="submit"><img src="img/mail.gif" alt="Enviar" width="100px" height="100px"></button>
+                    <button type="submit"><img src="img/mail.gif" alt="Enviar" width="100px" height="100px"></button>
+                    <button type="submit"><img src="img/mail.gif" alt="Enviar" width="100px" height="100px"></button>
+                </fieldset>
+                <br><br>
+                <a href="coment.html"><input type="button" style="font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;"  value="Finalizar"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+    <footer style="justify-content: space-evenly; display: flex;">
+        <img style="background-color: rgb(202, 202, 202); width:550px; height:150px; margin-left: 27px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);"> 
+        <p style="text-align: center; font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Esta pagina es muy descriptivo para la elaboracion de reclutamiento y convocacion a los usuarios, permitiendo un registro de informacion para una admision a una trabajo profesional y etico contando con la calidad de proceso...  </p>
+        <img style="background-color: rgb(202, 202, 202); width:550px; height:150px; margin-right: 27px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);"> 
+    </footer>
+    <p style="text-align: center; font-size: 17px;"><strong>&lt;Copyright &copy; 2023 - HTML &amp;&amp; CSS &gt;</strong></p>
+    <p style="text-align: center;">&euro; Status - Millon</p>
+</body>
+</html>

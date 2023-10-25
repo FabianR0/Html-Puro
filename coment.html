@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contactos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 60%;
+            margin: auto;
+        }
+        .radial-gradient {
+            background-color: #a40606;
+            background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+        }   
+    </style>
+  </head>
+  <body class="radial-gradient">
+  
+  <div class="container">
+    <br>
+    <div id="theCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicadores -->
+      <ol class="carousel-indicators">
+        <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#theCarousel" data-slide-to="1"></li>
+        <li data-target="#theCarousel" data-slide-to="2"></li>
+        <li data-target="#theCarousel" data-slide-to="3"></li>
+        
+      </ol>
+  
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="http://www.bcu.ac.uk/mediaitem/visual-communication-illustration-02-130585258441045504.jpg?quality=90" alt="Ilustracion" > 
+           <div class="carousel-caption d-none d-md-block">
+      <h3>Gusti Ilustración</h3>
+      <p>Exposición</p>
+    </div>
+        </div>
+        <div class="item">
+          <img src="https://ugc.kn3.net/i/origin/http://thisiscolossal.com/wp-content/uploads/2011/02/anthony-2-600x424.jpg" alt="fotografia" width="600" height="424"> 
+           <div class="carousel-caption d-none d-md-block">
+      <h3> Xataka Fotografía</h3>
+      <p>Concurso</p>
+    </div>
+        </div>
+  
+       <div class="item">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/e86e8b59124321.5a15e4ccd8622.jpg" alt="pintura" width="600" height="424">
+           <div class="carousel-caption d-none d-md-block">
+      <h3>DoArt Pintura</h3>
+      <p>Curso</p>
+    </div>
+        </div>
+         <div class="item">
+          <img src="https://cdn.dribbble.com/users/324248/screenshots/3978513/planet2_800.jpg" alt="diseno" width="600" height="424"> 
+           <div class="carousel-caption d-none d-md-block">
+      <h3>UX UI Diseño Gráfico</h3>
+      <p>Curso</p>
+    </div>
+        </div>
+  
+  
+      <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">anterior</span>
+      </a>
+      <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">siguiente</span>
+      </a>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: space-evenly;">
+    <nav style="position: absolute;"> 
+        <ul style="background: transparent;list-style-type: none;margin: 0;padding: 0;
+        overflow: hidden;">
+        <!-- link principal -->
+          <li class="left"><a href="index.html" style="
+              display: block; color: #ffffff; 
+              padding: 14px 16px;text-decoration: none;font-size: 25px; text-decoration: underline; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+              Inicio</a></li>
+        <!-- link product -->
+          <li class="left"><a href="product.html" style="
+            display: block; color: #ffffff;
+            padding: 14px 16px;text-decoration: none;font-size: 25px; text-decoration: underline; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+            Productos</a></li>
+        <!-- link coffee -->
+          <li class="left"><a href="coffee.html" style="
+            display: block; color: #ffffff;
+            padding: 14px 16px;text-decoration: none;font-size: 25px; text-decoration: underline; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+            Servicios</a></li>
+        <!-- link Coment -->
+          <li class="left"><a href="coment.html" style="
+            display: block; color: #ffffff;
+            padding: 14px 16px;text-decoration: none;font-size: 25px; text-decoration: underline; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+            Contacto</a></li>
+        <!-- link reclutar -->
+        <li class="left"><a href="reclutar.html" style="
+            display: block; color: #ffffff;
+            padding: 14px 16px;text-decoration: none;font-size: 25px; text-decoration: underline; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+            Reclutar</a></li>
+        </ul>
+    </nav>
+    <img src="./img/cubismo.jpeg" alt="" width="300px" height="300px" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);">
+    </div>
+    <br>
+    <br>
+    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+        <div>
+            <form action = "registradatos.php" method ="post" style="text-align: center;
+            max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
+                Ingrese su nombre :
+                <input type ="text" name="nombre" size ="20" style="width: 80%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px;">
+                <br>
+                Ingrese su clave
+                <input type ="password" name="clave" size="12" style="width: 80%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px;">
+                <br>
+                Seleccione uno o varios colores(presione CTRL para seleccionar) <br>
+                <select name="colores[]" id="" size="4" style="width: 100%;
+                padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px; color: #333; font-size: 16px;">
+                    <option value="1">Azul</option>
+                    <option value="2">Amarillo</option>
+                    <option value="3">Rojo</option>
+                    <option value="4">Verde</option>
+                    <option value="5">Morado</option>
+                    <option value="6">Rosado</option>
+                    <option value="7">Negro</option>
+                    <option value="8">Naranja</option>
+                    <option value="9">Blanco</option>
+                </select>
+                <br>
+                <select name ="pais" style="width: 100%;
+                padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px; background-color: #fff; color: #333; font-size: 16px;">
+                    <option value ="1">Argentina</option>
+                    <option value ="2">España</option>
+                    <option value ="3">Mexico</option>
+                    <option value ="4">Colombia</option>
+                    <option value ="5">Nicaragua</option>
+                    <option value ="6">Brazil</option>
+                    <option value ="7">Estados unidos</option>
+                    <option value ="8">Paraguay</option>
+                    <option value ="9">Chile</option>
+                    <option value ="10">Costa Rica</option>
+                    <option value ="11">Cuba</option>
+                    <option value ="12">Ecuador</option>
+                    <option value ="13">Italia</option>
+                    <option value ="14">Serbia</option>
+                    <option value ="15">Grecia</option>
+                    <option value ="16">Inglaterra</option> 
+                </select>
+                  <br>
+                <input type= "submit" value ="enviar" style="background-color: #1e98ea;
+                color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+                <input type="reset" value="borrar" style="background-color: #1e98ea;
+                color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+            </form>
+        </div>
+    </div>
+    <br>    
+    <hr>
+    <!-- caracteres especiales-->
+    <p style="text-align: center; font-size: 17px;"><strong>&lt;Copyright &copy; 2023 - HTML &amp;&amp; CSS &gt;</strong></p>
+    <p style="text-align: center;">&euro; Status - Millon</p>
+  </body>
+</html>

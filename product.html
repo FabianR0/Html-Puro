@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>Product</title>
+     <style>
+      fieldset{
+          border-color: black;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+      input{
+          border-color: rgb(95, 95, 95);
+          border-radius: 5px;
+      }
+      textarea{
+          border-color:rgb(0, 0, 0) ;
+          border-style: dashed;
+      }
+  </style>
+    </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h1 style="text-align: center;  font-size: 40px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Productos Innecesarios</h1>
+    </header>
+    <nav>
+      <ul style="display: flex; list-style: none; padding-left: 20%; width: 400px;">
+        <li style="flex-grow: 1;"><a href="index.html" style="width: 100%;">Inicio</a></li>
+        <li style="flex-grow: 1;"><a href="product.html" style="width: 100%;">Productos</a></li>
+        <li style="flex-grow: 1;"><a href="coffee.html" style="width: 100%;">Servicios</a></li>
+        <li style="flex-grow: 1;"><a href="coment.html" style="width: 100%;">Contacto</a></li>
+        <li style="flex-grow: 1;"><a href="reclutar.html" style="width: 100%;">Reclutar</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div >
+        <section id="sección1" style="margin-left: 7%; margin-right: 7%;">
+          <form action="registarDatos" method="post" >
+            <fieldset style="margin-top: 15px;">
+                <legend style="font-size: 20px;">Datos Personales:</legend>
+                  Apellidos y Nombre:
+                <input type="text" name="Nombre" size="30" style="margin-bottom: 5px;"></input>
+                  DNI
+                <input type="text" name="DNI" size="30" style="margin-bottom: 5px;"></input><br>
+                  F° Nacimiento
+                <input type="text" name="F° Nacimiento" size="30" style="margin-bottom: 5px;"></input>
+                  Direccion
+                <input type="text" name="Direccion" size="30" style="margin-bottom: 5px;"></input>
+            </fieldset>
+            <br>
+            <fieldset style="margin-top: 5px;">
+                <legend style="font-size: 20px;">Datos Laborales:</legend>
+                Nombre de la Empresa:
+                <input type="text" name="Nombre de la Empresa" size="30" style="margin-bottom: 5px;"></input>
+                  Actividad
+                <input type="text" name="Actividad" size="30" style="margin-bottom: 5px;"></input><br>
+                  Direccion
+                <input type="text" name="Direccion" size="30" style="margin-bottom: 5px;"></input>
+                  Teléfono
+                <input type="text" name="Teléfono" size="30" style="margin-bottom: 5px;"></input>
+            </fieldset>
+            <input type="submit" value="Enviar" style="margin-top:5px ;">
+          </form>
+        </section>
+      </div>
+      <br>
+      <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+        <div>
+          <section id="sección2">
+            <form action="registarDatos" method="post" style="text-align: center;
+              max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
+              Codigo de Descuentos &#36; :
+              <input type="text" name="Nombre" size="20" style="margin-bottom: 5px;"><br>
+              <button type="submit" style="align-items: center;display: inline-flex;">Enviar <img src="img/mail.gif" alt="Enviar" width="35px" height="35px"></button>
+              <button type="reset" style="align-items: center;display: inline-flex;">Borrar <img src="img/delete.gif" alt="Borrar" width="35px" height="35px"></button>
+            </form>
+          </section>
+        </div>
+        <div>
+          <section id="sección3"> 
+            <form action="registarDatos" method="post">
+                Nombre y Apellidos:
+              <input type="text" name="Nombre" size="20"><br>
+                Mayor de Edad?<br>
+              <input type="radio" name ="radio1" checked value="si">SI<br>
+              <input type="radio" name ="radio1" value="no">NO<br>
+                Telefono:
+              <input type="text" value ="+57-" name="telefon" size="15"  style="margin-bottom: 5px;"><br>
+              <textarea name="comentarios" rows="5" cols="40"> Ingrese aqui sus comentarios
+              </textarea><br>
+              <input type="submit"  value ="Enviar">
+            </form>
+          </section>
+        </div>
+      </div>  
+    </main>
+    <br>
+    <!-- productos -->
+    <div>
+        <form action="registarDatos" method="post" style="text-align: center;
+        max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
+            <input type="button" name="btn1" value="P">
+            <input type="button" name="btn2" value="R">
+            <input type="button" name="btn3" value="O">
+            <input type="button" name="btn4" value="D">
+            <input type="button" name="btn5" value="U">
+            <input type="button" name="btn6" value="C">
+            <input type="button" name="btn7" value="T">
+            <input type="button" name="btn8" value="O">
+            <input type="button" name="btn8" value="S">
+        </form>
+    </div>
+    <br>
+      <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+        <div>
+          <form action="registarDatos" method="post" style="text-align: center;
+          max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
+              Seleccion de Fruta o Verdura
+              <select name="articulo" id="1" style="width: 100%;
+              padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px; background-color: #fff; color: #333; font-size: 16px;">
+                  <optgroup label="FRUTAS">
+                      <option value="1">Naranjas</option>
+                      <option value="2">Manzanas</option>
+                      <option value="3">Mangos</option>
+                      <option value="4">Sandias</option>
+                      <option value="5">Fresas</option>
+                      <option value="6">Bananos</option>
+                  </optgroup>
+                  <optgroup label="VERDURAS">
+                      <option value="1">Papa</option>
+                      <option value="2">Zanahoria</option>
+                      <option value="3">Lechuga</option>
+                      <option value="4">Frijol</option>
+                      <option value="5">Arvejas</option>
+                      <option value="6">Garbanzos</option>
+                  </optgroup>
+              </select>
+              <br>
+              <input type="submit" value="Aceptar" style="background-color: #1e98ea;
+              color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+          </form>
+        </div>
+        <div>
+          <form action="registarDatos" method="post" style="text-align: center;
+          max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
+              Selección de Pan y Carne
+              <select name="artiuclo" id="" style="width: 100%;
+              padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px; background-color: #fff; color: #333; font-size: 16px;">
+                  <optgroup label="PAN">
+                    <option value="1">Pan integral</option>
+                    <option value="2">Pan de centeno</option>
+                    <option value="3">Pan de maíz</option>
+                    <option value="4">Pan de avena</option>
+                    <option value="5">Pan de nueces</option>
+                    <option value="6">Baguette</option>
+                </optgroup>
+                <optgroup label="CARNE">
+                    <option value="1">Pollo</option>
+                    <option value="2">Res(ternera)</option>
+                    <option value="3">Cerdo</option>
+                    <option value="4">Cordero</option>
+                    <option value="5">Pavo</option>
+                    <option value="6">Pescado</option>
+                </optgroup>
+              </select>
+              <br>
+              <input type="submit" value="Aceptar" style="background-color: #1e98ea;
+              color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+          </form>
+        </div>
+      </div>
+      <br>
+      <!-- referencia  -->
+      <div>
+        <form action="registarDatos" method="post" style="text-align: center;
+        max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
+            <input type="button" name="btn1" value="R">
+            <input type="button" name="btn2" value="E">
+            <input type="button" name="btn3" value="F">
+            <input type="button" name="btn4" value="E">
+            <input type="button" name="btn5" value="R">
+            <input type="button" name="btn6" value="E">
+            <input type="button" name="btn7" value="N">
+            <input type="button" name="btn8" value="C">
+            <input type="button" name="btn8" value="I">
+            <input type="button" name="btn8" value="A">
+        </form>
+      </div>
+      <br>
+      <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;"> 
+        <br>
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div>
+          <!-- formulario basico-->
+          <form action = "registrardatos.php" method = "post" style="text-align: center;
+          max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
+              Ingrese su nombre:
+                 <input type ="test"  name="nombre" size = "20" style="width: 80%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px;"><br>
+              Ingrese su apellido:
+                 <input type ="test"  name="apellido" size = "20" style="width: 80%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px;"><br>
+              Ingrese su cedula:
+                 <input type ="test"  name="cedula" size = "20" style="width: 80%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px;"><br>
+              Ingrese su correo:
+                 <input type ="test"  name="correo" size = "20" style="width: 80%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px;"><br>  
+              <br>
+                 <input type ="submit" value = "enviar" style="background-color: #1e98ea;
+                 color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+          </form>
+        </div>
+      </div>
+    <!-- footer -->
+      <footer>
+        <p style="text-align: center; font-size: 17px;"><strong>&lt;Copyright &copy; 2023 - HTML &amp;&amp; CSS &gt;</strong></p>
+    <p style="text-align: center;">&euro; Status - Millon</p>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Utp Coffee!!</title>
+    <style>
+        li {
+            float: left;
+        }
+        .stacked-linear {
+          background: linear-gradient(
+              217deg,
+              rgb(112, 52, 9),
+              rgba(255, 0, 0, 0) 70.71%
+            ), linear-gradient(127deg, rgba(223, 160, 33, 0.8), rgba(0, 255, 0, 0) 70.71%),
+            linear-gradient(336deg, rgba(30, 30, 31, 0.753), rgba(0, 0, 255, 0) 70.71%);
+        }
+    </style>
+</head>
+<body class="stacked-linear" style="margin: 0%;">
+  <ul style="background: transparent;list-style-type: none;margin: 0;padding: 0;
+  overflow: hidden;">
+    <li><a href="index.html" style="
+        background-color: #ddd;display: block; color: #333; text-align: center;
+        padding: 14px 16px;text-decoration: none;font-size: 18px;" :hover>Inicio</a></li>
+    <li><a href="product.html" style="
+      background-color: #ddd;display: block; color: #333; text-align: center;
+      padding: 14px 16px;text-decoration: none;font-size: 18px;">Productos</a></li>
+    <li><a href="coffee.html" style="
+      background-color: #ddd;display: block; color: #333; text-align: center;
+      padding: 14px 16px;text-decoration: none;font-size: 18px;">Servicios</a></li>
+    <li><a href="coment.html" style="
+      background-color: #ddd;display: block; color: #333; text-align: center;
+      padding: 14px 16px;text-decoration: none;font-size: 18px;">Contacto</a></li>
+    <li><a href="reclutar.html" style="
+      background-color: #ddd;display: block; color: #333; text-align: center;
+      padding: 14px 16px;text-decoration: none;font-size: 18px;">Reclutar</a></li>
+    <li><a href="#" style="
+      background-color: #ddd;display: block; color: #333; text-align: center;
+      padding: 14px 16px;text-decoration: none;font-size: 18px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" bi-search" viewBox="0 0 16 16">
+      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg></a></li>
+  </ul>
+      <h1 style="text-align: center; font-size: 50px;">!!!</h1>
+      <div style="display: flex;justify-content: space-evenly; ">
+        <br>
+        <br>
+        <a href="https://www.utp.edu.co/" target=_blank" style="display: block;  padding:0% 3% 0% 3%; ">
+        <img src="img/coffee-34.gif.webp" alt="siguiente" style="width: 400px; height: 300px;"></a>
+        <br>
+        <br>
+        <div style="flex-grow: 1;">
+          <p style="text-align: center; font-size: 18px;"><strong style="font-size: 23px;">Nuestro Café:</strong><br>
+            Esta sección ofrece una exploración profunda de los diferentes tipos de granos de café utilizados en la cafetería. Se presentan perfiles de sabor, orígenes y procesos de cultivo, permitiendo a los visitantes comprender la diversidad de sabores que ofrece el mundo del café.
+            <hr></p>
+            <p style="text-align: center; font-size: 18px;">
+            En conjunto, la página web con temática de café crea una experiencia virtual envolvente que transporta a los visitantes a un mundo lleno de aroma, sabor y comunidad. Desde la presentación de granos únicos hasta la invitación a eventos sociales y educativos, la página capta la esencia de la cultura del café y ofrece una experiencia en línea atractiva para aficionados y entusiastas por igual.
+            </p>
+        </div>
+      </div>
+</body>
+
+<footer>
+  <br>
+  <div style="display: flex; justify-content: space-evenly;"><strong><h1 style="text-align: center;">Que tanto sabes <br>del cafe?</h1></strong>
+    <div>
+      <form action="registrardato.php" method="post" style="text-align: center;
+      max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f458; border: 1px solid #ccc; border-radius: 5px; border: none;">
+        Ingrese su nombre:
+        <input type ="text" name="nombre" size="30" style="width: 80%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px;"><br>               
+        Seleccion multiple: Cual de esta preparaciones has tomado? <br>
+        <input type ="checkbox" name ="Expresso">Expresso<br>
+        <input type = "checkbox" name="Ristretto">Ristretto<br>
+        <input type = "checkbox" name = "Macchiato">Macchiato<br>
+        <input type = "checkbox" name ="Americano">Americano<br>
+        <input type = "checkbox" name ="Cafe">Cafe con Leche<br>
+        <input type = "checkbox" name ="Capuchino">Capuchino<br>
+        <input type = "submit" value ="Enviar" style="background-color: #1e98ea;
+        color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+      </form>
+    </div>
+    <div>
+      <form action="registrardatos.php" method="post" style="text-align: center;
+      max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f458; border: 1px solid #ccc; border-radius: 5px; border: none;">
+        Ingrese su nombre :
+        <input type="text" name="nombre" size="30" size="30" style="width: 80%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px;"><br>
+        Cuanto tiempo hace efecto la cafeína en nuestro cuerpo?
+        <br>
+        <input type = "radio" name ="estudios" value="1">sin estudio<br>
+        <input type ="radio" name ="estudios" value="2">10-15 min<br>
+        <input type="radio" name="estudios" value="3">30-45 min<br>
+        <input type ="radio" name="estudios"  value =4>3-9 h<br>
+        <input type ="radio" name ="estudios" value =5>depende de la cantidad de cafeina<br>
+        <input type ="radio" name ="estudios" value="6">todas la nteriores<br>
+        <input type ="submit" value ="Enviar" style="background-color: #1e98ea;
+        color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+    </form>
+    </div>
+  </div>
+  <hr>
+  <section dir="ltr">
+    <a href="https://es-la.facebook.com/" target=_blank" ><img src="img/facebook.png" style="width: 30px; height: 30px;"></a>
+    <a href="https://www.instagram.com/" target=_blank" ><img src="img/instagram.png" style="width: 30px; height: 30px; "></a>
+    <a href="https://web.whatsapp.com/" target=_blank" ><img src="img/whapsapp.png" style="width: 30px; height: 30px; "></a>
+    <a href="https://www.youtube.com/" target=_blank" ><img src="img/youtube.png" style="width: 30px; height: 30px; "></a>
+  </section>
+  <p style="text-align: center; font-size: 17px;"><strong>&lt;Copyright &copy; 2023 - HTML &amp;&amp; CSS &gt;</strong></p>
+  <p style="text-align: center;">&euro; Status - Millon</p>
+</footer>
+
+</html>

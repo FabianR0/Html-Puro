@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Banco GlobalNet</title>
+    <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+    <style>
+        body {
+            background-color: #ffffff; /* Blanco */
+            font-family: Arial, sans-serif;
+            color: #333333; /* Gris Oscuro */
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000000; /* Negro */
+        }
+        input{
+            margin-bottom: 5px;
+        }
+        textarea{
+            border-color:rgb(0, 0, 0) ;
+            border-style: dashed;
+        }
+        #acerca-de {
+            background-color: silver;
+            color: #000000;
+            padding: 20px;
+            border-radius: 15px 3px ;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Estilos para la sección "Acerca de" */
+        #acerca-de p {
+            font-size: 18px;
+            margin: 20px;
+        }
+
+        #acerca-de h2 {
+            color: #ffffff;
+            background-color: #000000;
+            padding: 10px;
+            border-radius: 3px 15px;
+        }
+    </style>
+</head>
+<!-- style="background: darkturquoise;margin:0;" -->
+<body >
+    <!-- Encabezado y Menú -->
+    <header style="display: flex; align-items: center; justify-content: space-around;    background: silver;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);">
+        <div>
+            <div style="display: flex;align-items: center;">
+                <lord-icon
+                    src="https://cdn.lordicon.com/cqkzklfo.json"
+                    trigger="hover"
+                    colors="primary:#121331,secondary:#000000"
+                    style="width:100px;height:100px">
+                </lord-icon> 
+                <h1 style="text-align: center; font-size: 50px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);flex-grow: 2;">Banco GlobalNet</h1>
+            </div>
+            <div>
+                <nav>    
+                    <ul style="display: flex;justify-content:space-around;">
+                        <li style="display: block; text-align: center;padding: 14px 16px;font-size: 25px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);"><a href="#inicio" style="text-decoration: none;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708);">Inicio</a></li>
+        
+                        <li style="display: block;  text-align: center;padding: 14px 16px;font-size: 25px;  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);"><a href="#historia" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708);">Historia</a></li>
+        
+                        <li style="display: block; text-align: center;padding: 14px 16px;font-size: 25px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);"><a href="#servicios" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708);">Servicios</a></li>
+        
+                        <li style="display: block; text-align: center;padding: 14px 16px;font-size: 25px; "><a href="#contacto" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708);">Contacto</a></li>
+        
+                        <li style="display: block; text-align: center;padding: 14px 16px;font-size: 25px;  "><a href="#acerca-de" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708);">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div>
+            <form action="buscar.php" method="get" style="margin-right: 5%; display: flex; align-items: center;">
+            <input type="text" name="q" placeholder="Consulte aquí" required style="text-align: center; font-size: 20px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);" width="50px" height="50px">
+            <lord-icon
+                src="https://cdn.lordicon.com/kkvxgpti.json"
+                trigger="hover"
+                style="width:45px;height:45px">
+            </lord-icon>
+        </form>
+        <br>
+        <br>
+        <form>
+            <strong><label for="usuario" style="font-size: 18px;font-family: serif;">Usuario:</label></strong>
+            <input type="text" id="usuario" name="usuario" placeholder="User" required style="margin-left: 25px;">
+            <br>
+            <strong><label for="contrasena" style="font-size: 18px;font-family: serif;">Contraseña:</label></strong>
+            <input type="password" id="contrasena" name="contrasena" placeholder="password">
+            <br>
+            <button type="submit"><strong>Ingresar</strong></button>
+        </form>
+        </div>
+    </header>
+    <!-- Párrafos y Títulos -->
+    <section style="display: flex;  align-items: center; justify-content:center;" id="inicio">
+        <div style="margin: 15px;">
+            <h2 style="text-align: center;">Misión</h2>
+            <p>Nuestra misión es proporcionar soluciones financieras innovadoras y seguras que satisfagan las necesidades de nuestros clientes y promuevan su bienestar financiero.
+            Siendo socio financiero de confianza de nuestros clientes, proporcionando servicios de banca de clase mundial que les permitan alcanzar sus metas financieras de manera segura y efectiva. Estamos comprometidos a brindar un servicio personalizado y soluciones financieras innovadoras que se adapten a las necesidades individuales de nuestros clientes.
+            </p>
+        </div>
+        <div>
+            <h2 style="text-align: center;">Visión</h2>
+            <p>Como banco líder a nivel global, nuestra visión es continuar creciendo y expandiendo nuestra presencia para ser reconocidos como la institución financiera de referencia en cada país donde operamos. Buscamos ser innovadores en la forma en que ofrecemos servicios bancarios y contribuir positivamente a las comunidades donde operamos.
+            Queremos ser el banco líder en la región, reconocido por la excelencia en el servicio al cliente y la contribución a la comunidad.</p>
+        </div>
+    </section>
+    <!-- Contenido Multimedia -->
+    <section style="display: flex;  align-items: center; justify-content:center;">
+        <div style="margin:5px;  border-color: black;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);border-radius:10px;">
+            <figure style="margin: 0;padding: 0;">
+                <img src="https://picsum.photos/id/1005/800/450" alt="Imagen 1"style="height: 150px; width:400px;">
+            </figure>
+            <div style=" padding: 24px;">
+                <h2>Cuentas de Ahorro</h2>
+                <p>Ahorra de manera segura y eficiente con nuestras cuentas de ahorro que ofrecen tasas competitivas.</p>
+                <input type="button" value="Conoce mas.." style="border-radius: 15px;">
+            </div>
+        </div>
+        <div style="margin:5px;border-color: black;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); ">
+            <figure style="margin: 0;padding: 0;">
+                <img src="https://picsum.photos/id/1006/800/450" alt="Imagen 2" style="height: 150px; width:350px;">
+            </figure>
+            <div style=" padding: 24px;">
+                <h2>Banca en Línea</h2>
+                <p style="text-align: center;">Accede a tus cuentas en cualquier momento y desde cualquier lugar con nuestra plataforma <br>de banca en línea segura y conveniente.</p>
+                <input type="button" value="Conoce mas.." style="border-radius: 15px;">
+            </div>
+        </div>
+        <div style="margin:5px;border-color: black;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);" >
+            <figure style="margin: 0;padding: 0;">
+                <img src="https://picsum.photos/id/1008/800/450" alt="Imagen 3" style="height: 150px; width:450px;">
+            </figure>
+            <div style="padding: 24px;">
+                <h2>Préstamos Personales</h2>
+                <p>Obtén el dinero que necesitas para hacer realidad tus proyectos con nuestros préstamos personales de bajo interés.</p>
+                <input type="button" value="Conoce mas.." style="border-radius: 15px;">
+            </div>
+        </div>
+    </section>
+    <br>
+    <section style="display: flex;  align-items: center; justify-content:space-between;    flex-direction: row-reverse;">
+        <div style="margin-right:15px ;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div style="display: flex; flex-direction: column;align-items: center;margin: 15px;" id="historia"> 
+            <h2>Historia del Banco</h2>
+            <p>El Banco GlobalNet fue fundado en 1995 y ha estado sirviendo a la comunidad con servicios financieros de alta calidad desde entonces con la visión de brindar soluciones financieras innovadoras y seguras a nivel internacional. Durante sus primeros años, se centró en expandir su presencia en el mercado global y construir una reputación de confiabilidad y excelencia en servicios bancarios. A lo largo de las décadas, ha evolucionado con los avances tecnológicos y se ha convertido en un líder en la industria financiera.
+        </p>
+        </div>
+    </section>
+    <br>
+    <section style="display: flex;  align-items: center; justify-content:space-evenly; background:silver;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);" id="servicios">
+        <div>
+            <h2>Beneficios de ser cliente del banco</h2>
+            <ul>
+                <li>Atención al cliente personalizada</li>
+                <li>Tasas de interés competitivas</li>
+                <li>Acceso Global</li>
+                <li>Descuentos exclusivos</li>
+                <li>Programa de Lealtad</li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <!-- Listas -->
+                <h2>Top 5 Productos del Banco</h2>
+                <ol>
+                    <li>Cuenta de Ahorros Inteligente</li>
+                    <li>Tarjeta de Crédito Globales</li>
+                    <li>Préstamos Personales/Empresarial</li>
+                    <li>Seguros de Vida</li>
+                    <li>Banca en Linea Avanzada</li>
+                </ol>
+            </div>
+            <div>
+                <h2>Enlaces relacionados</h2>
+                <ul>
+                    <li><a href="noticias.html">Noticias Financieras</a></li>
+                    <li><a href="socios.html">Nuestros Socios</a></li>
+                    <li><a href="promociones.html">Promociones Especiales</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- Formularios -->
+    <section>
+        <form style="display: flex; justify-content:center;">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required style="margin-left: 15px;">
+                <br>
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required style="margin-left: 6px;">
+                <br>
+                <button type="submit">Enviar</button>
+            </div>
+            <div style="display: flex; margin-left:15px;">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>            
+        </form>
+    </section>
+
+    <!-- Chat de WhatsApp -->
+    <h2 style="display: flex; justify-content:center; " id="contacto">¿Aún tienes dudas?</h2>
+    <section style="display: flex; justify-content:center;">
+        <div style="margin-right: 15px; display:flex; flex-direction: column;align-items: center;">
+            <lord-icon
+            src="https://cdn.lordicon.com/mvfkhjnv.json"
+            trigger="hover"
+            colors="primary:#121331,secondary:#000000"
+            style="width:60px;height:60px">
+            </lord-icon>
+            <p>Punto de Atencion</p>
+            <a href="#">Visitanos</a>
+        </div>
+        <div style="margin-right: 15px; display:flex; flex-direction: column;align-items: center;">
+            <lord-icon
+            src="https://cdn.lordicon.com/fdxqrdfe.json"
+            trigger="hover"
+            style="width:60px;height:60px">
+            </lord-icon>
+            <p>Chat en Linea</p>
+            <a href="#">Escribemos</a>
+        </div>    
+        <div style="margin-right: 15px; display:flex; flex-direction: column;align-items: center;">
+            <lord-icon
+            src="https://cdn.lordicon.com/rsvfayfn.json"
+            trigger="hover"
+            style="width:60px;height:60px">
+            </lord-icon>
+            <p>Prefieres que te llamemos</p>
+            <a href="#">Cuando quieras</a>
+        </div>
+        <div style="display:flex; flex-direction: column;align-items: center;">
+            <a href="https://web.whatsapp.com/" target=_blank" ><img src="img/whapsapp.png" style="width: 50px; height: 50px; "></a>
+            <p>¿Tienes alguna pregunta? <br> ¡Hablemos por WhatsApp!</p>
+            <a href="https://wa.me/573147687328" target="_blank">Chat de WhatsApp</a>
+        </div>
+    </section>
+    <section id="acerca-de">
+        <h2>Acerca de Nosotros</h2>
+        <p>Somos Banco GlobalNet, una institución financiera comprometida con la seguridad de tus inversiones y la satisfacción de nuestros clientes. Nuestra misión es proporcionar servicios financieros de alta calidad y brindar asesoramiento experto para ayudarte a alcanzar tus objetivos financieros.</p>
+    </section>
+    <div style="display: flex;  align-items: center; justify-content:center;">
+        <lord-icon
+            src="https://cdn.lordicon.com/kebcmsdb.json"
+            trigger="hover"
+            colors="primary:#121331,secondary:#c71f16"
+            style="width:60px;height:60px">
+        </lord-icon>
+        <p style="text-align: center; "><strong>&lt;Copyright &copy; 2023 - Politica de privacidad &amp;&amp; Condicciones de Uso&gt;</strong></p>
+    </div>
+    <p style="text-align: center; position: relative;bottom: 30px;">&euro; Politica de datos personales</p>  
+</body>
+</html>
