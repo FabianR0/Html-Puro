@@ -6,6 +6,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="description" content="">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
      <title>Product</title>
      <style>
       fieldset{
@@ -20,84 +21,185 @@
           border-color:rgb(0, 0, 0) ;
           border-style: dashed;
       }
+      th, td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid black;
+      }
+      .table-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+        margin-bottom: 20px;
+        }
+        .tipog{
+          font-family: 'Helvetica Neue', sans-serif; 
+          font-size: 16px; 
+          line-height: 1.5;
+        }
   </style>
     </head>
-  <body>
-    <!-- header -->
-    <header>
-      <h1 style="text-align: center;  font-size: 40px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Productos Innecesarios</h1>
-    </header>
-    <nav>
-      <ul style="display: flex; list-style: none; padding-left: 20%; width: 400px;">
-        <li style="flex-grow: 1;"><a href="index.html" style="width: 100%;">Inicio</a></li>
-        <li style="flex-grow: 1;"><a href="product.html" style="width: 100%;">Productos</a></li>
-        <li style="flex-grow: 1;"><a href="coffee.html" style="width: 100%;">Servicios</a></li>
-        <li style="flex-grow: 1;"><a href="coment.html" style="width: 100%;">Contacto</a></li>
-        <li style="flex-grow: 1;"><a href="reclutar.html" style="width: 100%;">Reclutar</a></li>
-      </ul>
-    </nav>
-    <main>
-      <div >
-        <section id="sección1" style="margin-left: 7%; margin-right: 7%;">
-          <form action="registarDatos" method="post" >
-            <fieldset style="margin-top: 15px;">
-                <legend style="font-size: 20px;">Datos Personales:</legend>
-                  Apellidos y Nombre:
-                <input type="text" name="Nombre" size="30" style="margin-bottom: 5px;"></input>
-                  DNI
-                <input type="text" name="DNI" size="30" style="margin-bottom: 5px;"></input><br>
-                  F° Nacimiento
-                <input type="text" name="F° Nacimiento" size="30" style="margin-bottom: 5px;"></input>
-                  Direccion
-                <input type="text" name="Direccion" size="30" style="margin-bottom: 5px;"></input>
-            </fieldset>
+  <body style=" background: #8e9eab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ">
+    <div style=" position: sticky; z-index: 100; top: 0;">
+      <header style="display: flex; align-items: center; justify-content: space-around;    background: rgb(192, 192, 192);box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);">
+        <div style="margin:0;padding:0;">
+            <div style="display: flex;align-items: center;margin:0;padding:0;">
+              <lord-icon
+                  src="https://cdn.lordicon.com/dytjrxws.json"
+                  trigger="hover"
+                  colors="primary:#000000,secondary:#000000"
+                  style="width:100px;height:100px">
+              </lord-icon>
+                <h1 style="text-align: center; font-size: 50px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);flex-grow: 2;">T...Urbano</h1>
+            </div>
+            <div style="margin:0;padding:0;">
+                <nav style="margin:0;padding:0;">    
+                    <ul style="display: flex;justify-content:space-around;margin:0;padding:0;">
+                        <li style="display: block; text-align: center;padding: 14px ;font-size: 25px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);"><a href="index.html" style="text-decoration: none;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708); color:rgb(37, 31, 31);">Inicio</a></li>
+        
+                        <li style="display: block;  text-align: center;padding: 14px ;font-size: 25px;  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);"><a href="coffee.html" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708);color:rgb(37, 31, 31);">Servicios</a></li>
+        
+                        <li style="display: block; text-align: center;padding: 14px ;font-size: 25px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);"><a href="product.html" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708);color:rgb(37, 31, 31);">Productos</a></li>
+        
+                        <li style="display: block; text-align: center;padding: 14px ;font-size: 25px; "><a href="coment.html" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708);color:rgb(37, 31, 31);">Promociones</a></li>
+  
+                        <li style="display: block; text-align: center;padding: 14px ;font-size: 25px;  "><a href="reclutar.html" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708);color:rgb(37, 31, 31);">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div style="margin:0;padding:0;">
+            <form action="buscar.php" method="get" style="margin-right: 5%; display: flex; align-items: center;">
+            <input type="text" name="q" placeholder="Consulte aquí" required style="text-align: center; font-size: 20px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);" width="50px" height="50px">
+            <lord-icon
+                src="https://cdn.lordicon.com/kkvxgpti.json"
+                trigger="hover"
+                style="width:45px;height:45px">
+            </lord-icon>
+        </form>
+        <br>
+        <br>
+        <form style="margin:0;padding:0;">
+            <strong><label for="usuario" style="font-size: 18px;font-family: serif;">Usuario:</label></strong>
+            <input type="text" id="usuario" name="usuario" placeholder="User" required style="margin-left: 28px;">
             <br>
-            <fieldset style="margin-top: 5px;">
-                <legend style="font-size: 20px;">Datos Laborales:</legend>
-                Nombre de la Empresa:
-                <input type="text" name="Nombre de la Empresa" size="30" style="margin-bottom: 5px;"></input>
-                  Actividad
-                <input type="text" name="Actividad" size="30" style="margin-bottom: 5px;"></input><br>
-                  Direccion
-                <input type="text" name="Direccion" size="30" style="margin-bottom: 5px;"></input>
-                  Teléfono
-                <input type="text" name="Teléfono" size="30" style="margin-bottom: 5px;"></input>
-            </fieldset>
-            <input type="submit" value="Enviar" style="margin-top:5px ;">
-          </form>
-        </section>
-      </div>
-      <br>
-      <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
-        <div>
-          <section id="sección2">
-            <form action="registarDatos" method="post" style="text-align: center;
-              max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
-              Codigo de Descuentos &#36; :
-              <input type="text" name="Nombre" size="20" style="margin-bottom: 5px;"><br>
-              <button type="submit" style="align-items: center;display: inline-flex;">Enviar <img src="img/mail.gif" alt="Enviar" width="35px" height="35px"></button>
-              <button type="reset" style="align-items: center;display: inline-flex;">Borrar <img src="img/delete.gif" alt="Borrar" width="35px" height="35px"></button>
-            </form>
-          </section>
+            <strong><label for="contrasena" style="font-size: 18px;font-family: serif;">Contraseña:</label></strong>
+            <input type="password" id="contrasena" name="contrasena" placeholder="password">
+            <br>
+            <button type="submit"><strong>Ingresar</strong></button>
+        </form>
+        <br>
         </div>
-        <div>
-          <section id="sección3"> 
-            <form action="registarDatos" method="post">
-                Nombre y Apellidos:
-              <input type="text" name="Nombre" size="20"><br>
-                Mayor de Edad?<br>
-              <input type="radio" name ="radio1" checked value="si">SI<br>
-              <input type="radio" name ="radio1" value="no">NO<br>
-                Telefono:
-              <input type="text" value ="+57-" name="telefon" size="15"  style="margin-bottom: 5px;"><br>
-              <textarea name="comentarios" rows="5" cols="40"> Ingrese aqui sus comentarios
-              </textarea><br>
-              <input type="submit"  value ="Enviar">
-            </form>
-          </section>
+    </header>
+    </div>
+    <hr style="border:double;">
+    <div class="table-container">
+      <ol class="tipog">
+        <div style="display: flex;align-items: center;justify-content: center;">
+          <li><strong>Productos de Ropa</strong>
+            <ul>
+              <li>Zapatos</li>
+              <li><a href="https://jeanscolombianos.com/co/">Pantalones</a></li>
+              <li>Camisetas</li>
+            </ul>
+          </li>
+          <lord-icon
+              src="https://cdn.lordicon.com/tanhhnoc.json"
+              trigger="hover"
+              colors="primary:#121331,secondary:#000000"
+              style="width:80px;height:80px;padding-left:10px;">
+          </lord-icon>
         </div>
-      </div>  
-    </main>
+        <div style="display: flex;align-items: center;justify-content: center;">
+          <li><strong>Accesorios</strong>
+            <ul>
+              <li class="som"><a href="https://www.printful.com/es/disena-tu-gorra">Gorras</a></li>
+              <li class="som">Bolsos</li>
+              <li class="som">Bufandas</li>
+            </ul>
+          </li>
+          <lord-icon
+              src="https://cdn.lordicon.com/lenjvibx.json"
+              trigger="hover"
+              colors="primary:#121331,secondary:#000000"
+              style="width:80px;height:80px;padding-left:24px;">
+          </lord-icon>
+        </div>
+      </ol>           
+      <ol class="tipog">
+        <div style="display: flex;align-items: center;justify-content: center;">
+          <li><strong>Ropa para Hombres</strong>
+            <ul>
+              <li class="som"><a href="https://www.camiseriaeuropea.com/">Camisas</a></li>
+              <li class="som">Pantalones</li>
+              <li class="som">Chaquetas</li>
+            </ul>
+          </li>
+          <lord-icon
+              src="https://cdn.lordicon.com/xzalkbkz.json"
+              trigger="hover"
+              colors="primary:#121331,secondary:#000000"
+              style="width:80px;height:80px;padding-left:15px;">
+          </lord-icon>
+        </div>
+        <div style="display: flex;align-items: center;justify-content: center;">
+          <li><strong>Ropa para Mujeres</strong>
+            <ul>
+              <li class="som">Vestidos</li>
+              <li class="som">Faldas</li>
+              <li class="som"><a href="https://www.studiof.com.co/">Blusas</a></li>
+            </ul>
+          </li>
+          <lord-icon
+              src="https://cdn.lordicon.com/qitvuzec.json"
+              trigger="hover"
+              colors="primary:#121331,secondary:#000000"
+              style="width:80px;height:80px;padding-left:15px;">
+          </lord-icon>
+        </div>
+      </ol>
+    </div> 
+    <hr style="border:double;"> 
+  <!-- Tablas organizadas -->
+  <div class="table-container">
+    <h2>Tablas de<br>Apreciacion de Producto</h2>
+    <table border="5">
+      <caption><strong class="font">Detalles...</strong></caption>
+      <th>RUT: 404</th>
+      <tr>
+        <td rowspan="4"><em><strong>Producto</strong></em></td><td colspan="4"><em><strong>Precio por uni.</strong></em></td>
+      </tr>
+      <tr>
+        <td>Zapatos</td><td>$50</td>
+      </tr>
+      <tr>
+        <td>Pantalones</td><td>$30</td>
+      </tr>
+      <tr>
+        <td>Camisetas</td><td>$15</td>
+      </tr>
+    </table>
+    <h2>Tablas Con <br> Descuento y Rebajas</h2>
+    <table border="5">
+      <caption><Strong class="font">Ofertones</Strong></caption>
+      <tr>
+        <th>Producto</th><th>Stock</th>
+      </tr>
+      <tr>
+        <td>Zapatos</td><td class="som" style="text-decoration: underline;">10% descuento. </td>
+      </tr>
+      <tr>
+        <td>Pantalones</td><td class="som" style="text-decoration: underline;">20% descuento.</td>
+      </tr>
+      <tr>
+        <td>Camisetas</td><td class="som" style="text-decoration: underline;">30% descuento.</td>
+      </tr>
+    </table>
+  </div>
+    
     <br>
     <!-- productos -->
     <div>
@@ -118,25 +220,24 @@
       <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
         <div>
           <form action="registarDatos" method="post" style="text-align: center;
-          max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
-              Seleccion de Fruta o Verdura
-              <select name="articulo" id="1" style="width: 100%;
+          max-width: 400px; margin-left: 20px; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
+          Selección de Ropa <br>
+              <select name="articulo" id="ropa" style="text-decoration: none;
               padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px; background-color: #fff; color: #333; font-size: 16px;">
-                  <optgroup label="FRUTAS">
-                      <option value="1">Naranjas</option>
-                      <option value="2">Manzanas</option>
-                      <option value="3">Mangos</option>
-                      <option value="4">Sandias</option>
-                      <option value="5">Fresas</option>
-                      <option value="6">Bananos</option>
+                  <optgroup label="Camisetas">
+                      <option value="1">Camiseta de algodón</option>
+                      <option value="2">Camiseta estampada</option>
+                      <option value="3">Camiseta de manga larga</option>
                   </optgroup>
-                  <optgroup label="VERDURAS">
-                      <option value="1">Papa</option>
-                      <option value="2">Zanahoria</option>
-                      <option value="3">Lechuga</option>
-                      <option value="4">Frijol</option>
-                      <option value="5">Arvejas</option>
-                      <option value="6">Garbanzos</option>
+                  <optgroup label="Pantalones">
+                      <option value="4">Jeans ajustados</option>
+                      <option value="5">Pantalón de vestir</option>
+                      <option value="6">Shorts casuales</option>
+                  </optgroup>
+                  <optgroup label="Vestidos">
+                      <option value="7">Vestido elegante</option>
+                      <option value="8">Vestido de verano</option>
+                      <option value="9">Vestido de fiesta</option>
                   </optgroup>
               </select>
               <br>
@@ -146,29 +247,44 @@
         </div>
         <div>
           <form action="registarDatos" method="post" style="text-align: center;
-          max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
-              Selección de Pan y Carne
-              <select name="artiuclo" id="" style="width: 100%;
+          max-width: 400px; padding: 20px; margin-left: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
+              Selección de Zapatos
+              <select name="articulo" id="zapatos" style="text-decoration: none;
               padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px; background-color: #fff; color: #333; font-size: 16px;">
-                  <optgroup label="PAN">
-                    <option value="1">Pan integral</option>
-                    <option value="2">Pan de centeno</option>
-                    <option value="3">Pan de maíz</option>
-                    <option value="4">Pan de avena</option>
-                    <option value="5">Pan de nueces</option>
-                    <option value="6">Baguette</option>
-                </optgroup>
-                <optgroup label="CARNE">
-                    <option value="1">Pollo</option>
-                    <option value="2">Res(ternera)</option>
-                    <option value="3">Cerdo</option>
-                    <option value="4">Cordero</option>
-                    <option value="5">Pavo</option>
-                    <option value="6">Pescado</option>
-                </optgroup>
+                  <optgroup label="Zapatos para Mujer">
+                      <option value="1">Tacones altos</option>
+                      <option value="2">Zapatos de salón</option>
+                      <option value="3">Botas de invierno</option>
+                  </optgroup>
+                  <optgroup label="Zapatos para Hombre">
+                      <option value="4">Zapatos formales</option>
+                      <option value="5">Zapatillas deportivas</option>
+                      <option value="6">Botas de trabajo</option>
+                  </optgroup>
+                  <optgroup label="Zapatos para Niños">
+                      <option value="7">Zapatos escolares</option>
+                      <option value="8">Zapatillas deportivas para niños</option>
+                      <option value="9">Botas para niños</option>
+                  </optgroup>
               </select>
               <br>
               <input type="submit" value="Aceptar" style="background-color: #1e98ea;
+              color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+          </form>
+        </div>
+        <div>
+          <form action="registarDatos" method="post" style="text-align: center;
+          max-width: 400px; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
+          Selección de Gorra
+            <select name="tipo" id="tipo" style="width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px; background-color: #fff; color: #333; font-size: 16px;">
+              <option value="béisbol">Gorra de béisbol</option>
+              <option value="snapback">Snapback</option>
+              <option value="trucker">Trucker</option>
+              <option value="visor">Visor</option>
+              <!-- Agrega más tipos de gorras según sea necesario -->
+            </select>
+            <br>
+            <input type="submit" value="Aceptar" style="background-color: #1e98ea;
               color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
           </form>
         </div>
@@ -194,30 +310,59 @@
       <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;"> 
         <br>
         <div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/is6O29gQde8?si=7n2EPlXHeM6txh9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div>
-          <!-- formulario basico-->
-          <form action = "registrardatos.php" method = "post" style="text-align: center;
-          max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
-              Ingrese su nombre:
-                 <input type ="test"  name="nombre" size = "20" style="width: 80%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px;"><br>
-              Ingrese su apellido:
-                 <input type ="test"  name="apellido" size = "20" style="width: 80%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px;"><br>
-              Ingrese su cedula:
-                 <input type ="test"  name="cedula" size = "20" style="width: 80%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px;"><br>
-              Ingrese su correo:
-                 <input type ="test"  name="correo" size = "20" style="width: 80%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px;"><br>  
-              <br>
-                 <input type ="submit" value = "enviar" style="background-color: #1e98ea;
-                 color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
-          </form>
+          <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+            <div>
+                <form action = "registradatos.php" method ="post" style="text-align: center;
+                max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
+                    <label for="colores">Selecciona tus colores favoritos de envios:</label>
+                    <select name="colores[]" id="colores" size="4" multiple style="width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px; color: #333; font-size: 16px;">
+                        <option value="azul">Azul</option>
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="amarillo">Amarillo</option>
+                        <option value="verde">Verde</option>
+                        <option value="naranja">Naranja</option>
+                    </select>
+                    <br>
+                    <label for="pais">Selecciona tu país de envios:</label>
+                    <select name ="pais" style="width: 100%;
+                    padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px; background-color: #fff; color: #333; font-size: 16px;">
+                        <option value ="1">Argentina</option>
+                        <option value ="2">España</option>
+                        <option value ="3">Mexico</option>
+                        <option value ="4">Colombia</option>
+                        <option value ="5">Nicaragua</option>
+                        <option value ="6">Brazil</option>
+                        <option value ="7">Estados unidos</option>
+                        <option value ="8">Paraguay</option>
+                        <option value ="9">Chile</option>
+                        <option value ="10">Costa Rica</option>
+                        <option value ="11">Cuba</option>
+                        <option value ="12">Ecuador</option>
+                        <option value ="13">Italia</option>
+                        <option value ="14">Serbia</option>
+                        <option value ="15">Grecia</option>
+                        <option value ="16">Inglaterra</option> 
+                    </select>
+                      <br>
+                    <input type= "submit" value ="enviar" style="background-color: #1e98ea;
+                    color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+                    <input type="reset" value="borrar" style="background-color: #1e98ea;
+                    color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+                </form>
+            </div>
+        </div>
         </div>
       </div>
     <!-- footer -->
       <footer>
-        <p style="text-align: center; font-size: 17px;"><strong>&lt;Copyright &copy; 2023 - HTML &amp;&amp; CSS &gt;</strong></p>
-    <p style="text-align: center;">&euro; Status - Millon</p>
+        <p style="text-align: center; font-size: 17px;"><strong>&lt;Copyright &copy; 2023 Tienda Urbano. Todos los derechos reservados. &gt;</strong></p>
+    <p style="text-align: center;"><strong>&euro; Status - Millon</strong></p>
       </footer>
   </body>
 </html>

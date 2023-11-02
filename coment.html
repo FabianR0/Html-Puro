@@ -5,167 +5,185 @@
     <title>Contactos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        .carousel-inner > .item > img,
-        .carousel-inner > .item > a > img {
-            width: 60%;
-            margin: auto;
-        }
-        .radial-gradient {
-            background-color: #a40606;
-            background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-        }   
-    </style>
+    <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
   </head>
-  <body class="radial-gradient">
+  <body style=" background: #8e9eab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ">
   
-  <div class="container">
-    <br>
-    <div id="theCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicadores -->
-      <ol class="carousel-indicators">
-        <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#theCarousel" data-slide-to="1"></li>
-        <li data-target="#theCarousel" data-slide-to="2"></li>
-        <li data-target="#theCarousel" data-slide-to="3"></li>
+    <div style=" position: sticky; z-index: 100; top: 0;">
+      <header style="display: flex; align-items: center; justify-content: space-around;    background: rgb(192, 192, 192);box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);">
+        <div style="margin:0;padding:0;">
+            <div style="display: flex;align-items: center;margin:0;padding:0;">
+              <lord-icon
+                  src="https://cdn.lordicon.com/dytjrxws.json"
+                  trigger="hover"
+                  colors="primary:#000000,secondary:#000000"
+                  style="width:100px;height:100px">
+              </lord-icon>
+                <h1 style="text-align: center; font-size: 50px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);flex-grow: 2;">T...Urbano</h1>
+            </div>
+            <div style="margin:0;padding:0;">
+                <nav style="margin:0;padding:0;">    
+                    <ul style="display: flex;justify-content:space-around;margin:0;padding:0;">
+                        <li style="display: block; text-align: center;padding: 14px ;font-size: 25px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);"><a href="index.html" style="text-decoration: none;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708); color:rgb(37, 31, 31);">Inicio</a></li>
         
-      </ol>
+                        <li style="display: block;  text-align: center;padding: 14px ;font-size: 25px;  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);"><a href="coffee.html" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708);color:rgb(37, 31, 31);">Servicios</a></li>
+        
+                        <li style="display: block; text-align: center;padding: 14px ;font-size: 25px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);"><a href="product.html" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708);color:rgb(37, 31, 31);">Productos</a></li>
+        
+                        <li style="display: block; text-align: center;padding: 14px ;font-size: 25px; "><a href="coment.html" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708);color:rgb(37, 31, 31);">Promociones</a></li>
   
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="http://www.bcu.ac.uk/mediaitem/visual-communication-illustration-02-130585258441045504.jpg?quality=90" alt="Ilustracion" > 
-           <div class="carousel-caption d-none d-md-block">
-      <h3>Gusti Ilustración</h3>
-      <p>Exposición</p>
-    </div>
+                        <li style="display: block; text-align: center;padding: 14px ;font-size: 25px;  "><a href="reclutar.html" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.708);color:rgb(37, 31, 31);">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="item">
-          <img src="https://ugc.kn3.net/i/origin/http://thisiscolossal.com/wp-content/uploads/2011/02/anthony-2-600x424.jpg" alt="fotografia" width="600" height="424"> 
-           <div class="carousel-caption d-none d-md-block">
-      <h3> Xataka Fotografía</h3>
-      <p>Concurso</p>
-    </div>
+        <div style="margin:0;padding:0;">
+            <form action="buscar.php" method="get" style="margin-right: 5%; display: flex; align-items: center;">
+            <input type="text" name="q" placeholder="Consulte aquí" required style="text-align: center; font-size: 20px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);" width="50px" height="50px">
+            <lord-icon
+                src="https://cdn.lordicon.com/kkvxgpti.json"
+                trigger="hover"
+                style="width:45px;height:45px">
+            </lord-icon>
+        </form>
+        <br>
+        <br>
+        <form style="margin:0;padding:0;">
+            <strong><label for="usuario" style="font-size: 18px;font-family: serif;">Usuario:</label></strong>
+            <input type="text" id="usuario" name="usuario" placeholder="User" required style="margin-left: 28px;">
+            <br>
+            <strong><label for="contrasena" style="font-size: 18px;font-family: serif;">Contraseña:</label></strong>
+            <input type="password" id="contrasena" name="contrasena" placeholder="password">
+            <br>
+            <button type="submit"><strong>Ingresar</strong></button>
+        </form>
+        <br>
         </div>
-  
-       <div class="item">
-          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/e86e8b59124321.5a15e4ccd8622.jpg" alt="pintura" width="600" height="424">
-           <div class="carousel-caption d-none d-md-block">
-      <h3>DoArt Pintura</h3>
-      <p>Curso</p>
-    </div>
-        </div>
-         <div class="item">
-          <img src="https://cdn.dribbble.com/users/324248/screenshots/3978513/planet2_800.jpg" alt="diseno" width="600" height="424"> 
-           <div class="carousel-caption d-none d-md-block">
-      <h3>UX UI Diseño Gráfico</h3>
-      <p>Curso</p>
-    </div>
-        </div>
-  
-  
-      <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">anterior</span>
-      </a>
-      <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">siguiente</span>
-      </a>
-    </div>
-  </div>
-  <div style="display: flex; justify-content: space-evenly;">
-    <nav style="position: absolute;"> 
-        <ul style="background: transparent;list-style-type: none;margin: 0;padding: 0;
-        overflow: hidden;">
-        <!-- link principal -->
-          <li class="left"><a href="index.html" style="
-              display: block; color: #ffffff; 
-              padding: 14px 16px;text-decoration: none;font-size: 25px; text-decoration: underline; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-              Inicio</a></li>
-        <!-- link product -->
-          <li class="left"><a href="product.html" style="
-            display: block; color: #ffffff;
-            padding: 14px 16px;text-decoration: none;font-size: 25px; text-decoration: underline; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-            Productos</a></li>
-        <!-- link coffee -->
-          <li class="left"><a href="coffee.html" style="
-            display: block; color: #ffffff;
-            padding: 14px 16px;text-decoration: none;font-size: 25px; text-decoration: underline; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-            Servicios</a></li>
-        <!-- link Coment -->
-          <li class="left"><a href="coment.html" style="
-            display: block; color: #ffffff;
-            padding: 14px 16px;text-decoration: none;font-size: 25px; text-decoration: underline; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-            Contacto</a></li>
-        <!-- link reclutar -->
-        <li class="left"><a href="reclutar.html" style="
-            display: block; color: #ffffff;
-            padding: 14px 16px;text-decoration: none;font-size: 25px; text-decoration: underline; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-            Reclutar</a></li>
-        </ul>
-    </nav>
-    <img src="./img/cubismo.jpeg" alt="" width="300px" height="300px" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);">
+    </header>
     </div>
     <br>
     <br>
-    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+    <main>
+      <div>
+        <section id="ofertas-promociones">
+          <form action="registarDatos" method="post">
+            <fieldset style="margin-top: 15px; display:flex;justify-content: space-evenly;">
+              <legend style="font-size: 20px;">¡Explora Nuestras Promociones Exclusivas!</legend>
+              <div>
+                Producto en Promoción: <br>
+              <input type="text" name="producto_promocion" size="30" style="margin-bottom: 5px;"></input> <br>
+              Código de Descuento<br>
+              <input type="text" name="codigo_descuento" size="30" style="margin-bottom: 5px;"></input>
+              </div>
+              <div>
+                Fecha de Expiración <br>
+              <input type="text" name="fecha_expiracion" size="30" style="margin-bottom: 5px;"></input><br>
+              Dirección de Envío <br>
+              <input type="text" name="direccion_envio" size="30" style="margin-bottom: 5px;"></input>
+              </div>
+              <img src="./img/10.jpg" alt="Producto en promoción"  width="200" height="150" style="border-radius: 10px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);">
+            </fieldset>
+            <br>
+            <fieldset style="margin-top: 5px;display:flex;justify-content: space-evenly;">
+              <legend style="font-size: 20px;">Descubre Nuestras Ofertas Especiales</legend>
+              <div>
+                Nombre del Comercio: <br>
+              <input type="text" name="nombre_comercio" size="30" style="margin-bottom: 5px;"></input> <br>
+              Tipo de Oferta <br>
+              <input type="text" name="tipo_oferta" size="30" style="margin-bottom: 5px;"></input>
+              </div>
+              <div>
+                Dirección del Comercio <br>
+              <input type="text" name="direccion_comercio" size="30" style="margin-bottom: 5px;"></input> <br>
+              Teléfono de Contacto <br>
+              <input type="text" name="telefono_contacto" size="30" style="margin-bottom: 5px;"></input>
+              </div>
+              <img src="./img/9.jpg" alt="Oferta especial"  width="200" height="150" style="border-radius: 10px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);">
+            </fieldset>
+            
+            <input type="submit" value="Consultar Ofertas" style="margin-top:5px; background-color: #1e98ea; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+            <button type="reset" style="align-items: center; display: inline-flex; background-color: #f04f4f; color: white; border: none;border-radius: 5px; cursor: pointer;">Limpiar <img src="img/delete.gif" alt="Limpiar" width="35px" height="35px" style="border-radius: 10px;margin-left:5px;"></button>
+          </form>
+        </section>
+      </div>
+      <br>
+      <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
         <div>
-            <form action = "registradatos.php" method ="post" style="text-align: center;
-            max-width: 400px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; border: 1px solid #ccc; border-radius: 5px;">
-                Ingrese su nombre :
-                <input type ="text" name="nombre" size ="20" style="width: 80%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px;">
-                <br>
-                Ingrese su clave
-                <input type ="password" name="clave" size="12" style="width: 80%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px;">
-                <br>
-                Seleccione uno o varios colores(presione CTRL para seleccionar) <br>
-                <select name="colores[]" id="" size="4" style="width: 100%;
-                padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px; color: #333; font-size: 16px;">
-                    <option value="1">Azul</option>
-                    <option value="2">Amarillo</option>
-                    <option value="3">Rojo</option>
-                    <option value="4">Verde</option>
-                    <option value="5">Morado</option>
-                    <option value="6">Rosado</option>
-                    <option value="7">Negro</option>
-                    <option value="8">Naranja</option>
-                    <option value="9">Blanco</option>
-                </select>
-                <br>
-                <select name ="pais" style="width: 100%;
-                padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 3px; background-color: #fff; color: #333; font-size: 16px;">
-                    <option value ="1">Argentina</option>
-                    <option value ="2">España</option>
-                    <option value ="3">Mexico</option>
-                    <option value ="4">Colombia</option>
-                    <option value ="5">Nicaragua</option>
-                    <option value ="6">Brazil</option>
-                    <option value ="7">Estados unidos</option>
-                    <option value ="8">Paraguay</option>
-                    <option value ="9">Chile</option>
-                    <option value ="10">Costa Rica</option>
-                    <option value ="11">Cuba</option>
-                    <option value ="12">Ecuador</option>
-                    <option value ="13">Italia</option>
-                    <option value ="14">Serbia</option>
-                    <option value ="15">Grecia</option>
-                    <option value ="16">Inglaterra</option> 
-                </select>
-                  <br>
-                <input type= "submit" value ="enviar" style="background-color: #1e98ea;
-                color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
-                <input type="reset" value="borrar" style="background-color: #1e98ea;
-                color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
-            </form>
+          <section id="oferta-destacada">
+            <h2>Oferta Destacada</h2>
+            <p>Aprovecha nuestra oferta especial de la semana. Compra uno y lleva el segundo a mitad de precio.</p>
+            <img src="./img/8.jpg" alt="Oferta Destacada" width="400" height="300">
+            <a href="detalle_oferta.html" style="display:flex;">Ver Detalles</a>
+          </section>
         </div>
-    </div>
+        <div>
+          <section dir="ltr" style="display: flex;flex-direction: column;">
+            <div>
+              <h1 style="font-size: 25px; margin-bottom:5px; margin-top:10px;">Siguenos...</h1>
+            </div>
+            <div>
+              <a href="https://es-la.facebook.com/" target=_blank" ><img src="img/facebook.png" style="width: 45px; height: 45px;"></a>
+              <a href="https://www.instagram.com/" target=_blank" ><img src="img/instagram.png" style="width: 45px; height: 45px;"></a><br>
+              <a href="https://web.whatsapp.com/" target=_blank" ><img src="img/whapsapp.png" style="width: 45px; height: 45px; "></a>
+              <a href="https://www.youtube.com/" target=_blank" ><img src="img/youtube.png" style="width: 45px; height: 45px; "></a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
     <br>    
     <hr>
+    <br>
+    <div style="display: flex;align-items: center;">
+      <!-- formulario basico-->
+      <form action="registrardatos.php" method="post" style="text-align: center;padding: 20px;background-color: #f4f4f4;border: 1px solid #ccc;border-radius: 5px;max-width: 400px;margin: 0 auto;">
+        <h4 style="font-size: 20px;
+        color: #333;">¡Únete a nuestro programa Premium y disfruta de ventajas exclusivas!</h4>
+        <p style="color: #555;margin: 10px 0;">En Tienda Urbano, valoramos a nuestros clientes y queremos recompensarte por tu lealtad. Únete a nuestro programa Premium para acceder a una experiencia de compra inigualable.</p>
+        <p style="color: #555;margin: 10px 0;">Beneficios destacados:</p>
+        <ul style="list-style-type: disc;margin-left: 20px;color: #555;">
+            <li>Envío rápido y gratuito en tus pedidos.</li>
+            <li>Descuentos y ofertas exclusivas.</li>
+            <li>Acceso anticipado a las últimas novedades.</li>
+            <li>Atención al cliente prioritaria.</li>
+        </ul>
+        <p style="color: #555;margin: 10px 0;">Regístrate ahora y comienza a disfrutar de todos estos beneficios exclusivos. ¡No dejes pasar esta oportunidad!</p>
+        
+        <label for="nombre" style=" display: block;text-align: left;margin-top: 10px;font-weight: bold;color: #333;">Ingrese su nombre:</label>
+        <input type="text" name="nombre" id="nombre" size="20" style="width: 90%;padding: 10px;margin: 8px 0;border: 1px solid #ccc;border-radius: 3px;"><br>
+        
+        <label for="correo" style=" display: block;text-align: left;margin-top: 10px;font-weight: bold;color: #333;">Ingrese su correo:</label>
+        <input type="text" name="correo" id="correo" size="20" style="width: 90%;padding: 10px;margin: 8px 0;border: 1px solid #ccc;border-radius: 3px;"><br>
+        
+        <input type="submit" value="Unirse al Programa Premium" style="background-color: #1e98ea; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+    </form>
+    <section id="cupones">
+      <form action="registarDatos" method="post">
+        <h2>¡Descubre Nuestras Ofertas y Cupones Especiales!</h2>
+        Nombre y Apellidos:
+        <input type="text" name="nombre" size="20"><br>
+        ¿Te gustaría recibir ofertas y cupones especiales por correo electrónico?<br>
+        <input type="radio" name="ofertas_cupones" checked value="si">¡Sí, por supuesto!<br>
+        <input type="radio" name="ofertas_cupones" value="no">No, gracias.<br>
+        Teléfono de contacto:
+        <input type="text" name="telefono" size="15" style="margin-bottom: 5px;"><br>
+        Comentarios:
+        <textarea name="comentarios" rows="5" cols="40">Escribe aquí tus comentarios...
+        </textarea><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+    
+    </div>
+    <br>
+    <br>
     <!-- caracteres especiales-->
-    <p style="text-align: center; font-size: 17px;"><strong>&lt;Copyright &copy; 2023 - HTML &amp;&amp; CSS &gt;</strong></p>
-    <p style="text-align: center;">&euro; Status - Millon</p>
   </body>
+  <footer>
+    <p style="text-align: center; font-size: 17px;"><strong>&lt;Copyright &copy; 2023 Tienda Urbano. Todos los derechos reservados. &gt;</strong></p>
+    <p style="text-align: center;"><strong>&euro; Status - Millon</strong></p>
+  </footer>
 </html>
